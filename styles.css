@@ -1,0 +1,223 @@
+@font-face {
+    font-family: squarefont;
+    src: url(assets/Square.ttf);
+}
+
+@font-face {
+    font-family: pixelfont;
+    src: url(assets/font.TTF);
+}
+  
+@keyframes show {
+    0% {
+      opacity: .5;
+      transform: scale(0);
+    }
+}
+
+.blink {
+    animation: blink 2s infinite;
+}
+
+.building {
+    text-align: center;
+    font-family: squarefont;
+    color: rgb(71, 122, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 9vmin;
+    margin-bottom: 3.5%;
+    margin-left: 2%;
+}
+
+.building-carwash {
+    background-color: rgb(223, 223, 223);
+    border: 1px solid rgb(0, 0, 0);
+    width: 25vmin;
+    height: 34vmin;
+}
+
+.building-dea {
+    background-color: rgb(36, 36, 36);
+    border: 10px solid rgb(60, 60, 60);
+    width: 35vmin;
+    height: 35vmin;
+}
+
+.building-home {
+    background-color: rgb(75, 56, 56);
+    border: 2px solid black;
+    font-size: 11vmin;
+    width: 40vmin;
+    height: 40vmin;
+}
+
+.building-lasertag {
+    background-color: rgb(43, 51, 33);
+    border: 5px solid rgb(0, 0, 0);
+    width: 30vmin;
+    height: 30vmin;
+}
+
+.building-lospolloshermanos {
+    background-color: rgb(174, 174, 174);
+    border: 10px solid rgb(95, 95, 95);
+    width: 50vmin;
+    height: 37vmin;
+}
+
+.building-nailsalon {
+    background-color: rgb(86, 86, 86);
+    border: 5px solid rgb(181, 181, 181);
+    width: 30vmin;
+    height: 30vmin;
+}
+
+.building-saul {
+    background-color: rgb(60, 60, 60);
+    border: 5px solid rgb(181, 181, 181);
+    width: 70vmin;
+    height: 30vmin;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.chose-your-character {
+    width: 95%;
+    height: 50%;
+    border: 5px solid rgb(41, 54, 41);
+    background-color: rgb(70, 70, 70);
+    background-position: bottom;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.choose-your-character-character {
+    opacity: 15%;
+    height: 40vmin;
+}
+
+.choose-your-character-character-choosen {
+    opacity: 100%;
+    height: 40vmin;
+}
+
+.cookbutton {
+    font-size: 8vmin;
+    font-family: pixelFont;
+    color: white;
+    border: 7px solid rgb(41, 54, 41);
+    padding: 1%;
+    background-color: rgb(71, 122, 80);
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.modal-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(29, 32, 27);
+    color: rgb(178, 217, 174);
+    width: 80vmin;
+    height: 50vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header {
+    font-family: squarefont;
+    text-align: center;
+    font-size: 7vmin;
+    padding-bottom: 0;
+    margin-bottom: 5%;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.modal-text {
+    font-size: 4.5vmin;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 5%;
+    margin: 0;
+    text-align: center;
+}
+
+.options {
+    overflow: hidden;
+    width: 100%;
+    height: 40%;
+    background-color: rgb(54, 54, 54);
+    border-top: 4px solid rgb(41, 54, 41);
+    display: flex;
+    flex-direction: row;
+}
+
+.option {
+    overflow: hidden;
+    width: 50%;
+    height: 96%;
+    border: 5px solid rgb(41, 54, 41);
+    background-color: rgb(54, 54, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(71, 122, 80);
+    font-size: 10vmin;
+    font-family: squarefont;
+    background-color: rgb(165, 165, 165);
+    text-align: center;
+}
+
+.padding-above {
+    padding-top: 13.5%;
+}
+
+.pixel-font {
+    font-family: pixelfont;
+}
+
+.room {
+    overflow: hidden;
+    width: 100%;
+    height: 60%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.square-font {
+    font-family: squarefont;
+}
+
+.white-text {
+    color: white;
+}
+
+#subtitle {
+    color: rgb(116, 172, 116);
+    font-family: pixelfont;
+    font-size: 3.5vmin;
+    text-align: center;
+}

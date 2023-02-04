@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where's Walter Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            background-image: url(assets/background.svg);
+            background-repeat: repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 5vmin;
+            color: rgb(34, 75, 41);
+        }
+
+        h2 {
+            font-size: 7vmin;
+            color: rgb(71, 122, 80);
+        }
+
+        h3 {
+            font-size: 10vmin;
+            padding-left: 10%;
+            padding-right: 10%;
+            color: rgb(34, 75, 41);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="pixel-font">WHERE'S WALTER ONLINE</h1>
+    <div class="chose-your-character">
+        <img id="three" src="assets/3.png" onclick="setOpacity(3)" class="choose-your-character-character-choosen">
+        <img id="four" src="assets/4.png" onclick="setOpacity(4)" class="choose-your-character-character">
+        <img id="one" src="assets/1.png" onclick="setOpacity(1)" class="choose-your-character-character">
+        <img id="two" src="assets/2.png" onclick="setOpacity(2)" class="choose-your-character-character">
+    </div>
+    <div class="row">
+        <h2 onclick="setRole('cook')" id="cook" class="pixel-font">COOK</h2>
+        <h3 class="pixel-font">OR</h3>
+        <h2 onclick="setRole('DEA')" id="DEA" class="pixel-font">DEA</h2>
+    </div>
+</body>
+<script src="choose-your-character.js"></script>
+</html>
