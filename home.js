@@ -1,3 +1,9 @@
+if (parseInt(localStorage.getItem('stars')) > 9) {
+    window.location.href = './gameover.html';
+}
+
+
+const row = document.querySelector('.row');
 let role = localStorage.getItem('role')
 let assets = localStorage.getItem('assets')
 document.getElementById('role').innerText += ` ${role}`;
@@ -24,3 +30,15 @@ if (role === 'DEA') {
         window.location.href = './cook.html';
     }
 }
+
+function addButton() {
+    let cookbutton = document.createElement('button');
+    cookbutton.classList.add('cookbutton');
+    cookbutton.innerText = 'BACK TO MAP'
+    document.querySelector('.row').appendChild(cookbutton);
+    cookbutton.onclick = function(){
+        window.location.href = './map.html';
+    }
+}
+
+addButton()

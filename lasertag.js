@@ -1,3 +1,7 @@
+if (parseInt(localStorage.getItem('stars')) > 9) {
+    window.location.href = './gameover.html';
+}
+
 const room = document.querySelector('div.room');
 const row = document.querySelector('div.row');
 const subtitle = document.getElementById('subtitle');

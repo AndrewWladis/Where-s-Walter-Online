@@ -8,31 +8,23 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         body, html {
-            background-image: url(assets/house.jpg);
+            background-image: url(assets/computer.svg);
             background-repeat: no-repeat;
             background-size: cover;
+            background-position: center;
             margin: 0;
             padding: 0;
             width: 100%;
             height: 100%;
         }
-
-        h1 {
-            font-size: 5vmin;
-            font-family: squarefont;
-            color: rgb(71, 122, 80);
-        }
-
-        .row > * {
-            margin: 3%;
-        }
     </style>
 </head>
 <body scroll="no" style="overflow: hidden">
-    <div class="row padding-above" style="flex-wrap: wrap;">
-        <h1 id="role">Role: </h1>
-        <h1 id="money">Money: </h1>
+    <h1 id="time" class="red-text">3</h1>
+    <div class="input-container">
+        <label class="unselectable" for="search">Waiting...</label>
+        <input name="search" type="text">
     </div>
 </body>
-<script src="./home.js"></script>
+<script src="./work.js"></script>
 </html>

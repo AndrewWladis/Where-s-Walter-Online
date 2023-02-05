@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 @font-face {
     font-family: squarefont;
     src: url(assets/Square.ttf);
@@ -12,6 +14,21 @@
     0% {
       opacity: .5;
       transform: scale(0);
+    }
+}
+
+@keyframes growandshow {
+    0% {
+      opacity: 0%;
+      max-height: 3vmin;
+    }
+    50% {
+        opacity: 100%;
+        max-height: 18vmin;
+    }
+    100% {
+        opacity: 0%;
+        max-height: 19vmin;
     }
 }
 
@@ -108,7 +125,7 @@
 }
 
 .cookbutton {
-    font-size: 8vmin;
+    font-size: 6vmin;
     font-family: pixelFont;
     color: white;
     border: 7px solid rgb(41, 54, 41);
@@ -116,8 +133,45 @@
     background-color: rgb(71, 122, 80);
 }
 
+.element {
+    padding: 5px;
+    animation: growandshow 1s infinite;
+}
+
 .flip {
     transform: scaleX(-1);
+}
+
+.gone {
+    opacity: 0%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-container label {
+    color: rgb(116, 172, 116);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 8vmin;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.input-container input {
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 7vmin;
+    background-color: white;
+    border: 5px solid rgb(148, 148, 148);
+}
+
+.light-green-text {
+    color: rgb(116, 172, 116);
 }
 
 .modal-content {
@@ -138,7 +192,7 @@
 .modal-header {
     font-family: squarefont;
     text-align: center;
-    font-size: 7vmin;
+    font-size: 5vmin;
     padding-bottom: 0;
     margin-bottom: 5%;
     margin-top: 0;
@@ -181,11 +235,15 @@
 }
 
 .padding-above {
-    padding-top: 13.5%;
+    padding-top: 11%;
 }
 
 .pixel-font {
     font-family: pixelfont;
+}
+
+.red-text {
+    color: rgb(230, 63, 63);
 }
 
 .room {
@@ -211,6 +269,15 @@
     font-family: squarefont;
 }
 
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 .white-text {
     color: white;
 }
@@ -220,4 +287,11 @@
     font-family: pixelfont;
     font-size: 3.5vmin;
     text-align: center;
+}
+
+#time {
+    font-family: squarefont;
+    font-size: 10vmin;
+    text-align: right;
+    margin: 2%;
 }

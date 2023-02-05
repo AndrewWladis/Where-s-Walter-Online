@@ -22,7 +22,10 @@ function setOpacity(num) {
 function setRole(role) {
     localStorage.setItem('role', role);
     if (role === 'DEA') {
-        localStorage.setItem('money', 1000);  
+        localStorage.setItem('money', 1000); 
+        if (localStorage.getItem('stars') != undefined) {
+            localStorage.removeItem('stars')
+        }
     } else {
         localStorage.setItem('money', 0);
         localStorage.setItem('stars', 1);
