@@ -18,7 +18,6 @@ function createModal() {
     const modal = document.querySelector('.modal-content');
     document.querySelectorAll('p.modal-header')[0].innerText = `Pay: ${money + 200}`;
     document.querySelectorAll('p.modal-header')[1].innerText = 'click to go back to map';
-    labelText.innerText = ' '
     modal.onclick = function(){
         window.location.href = './map.html';
     }
@@ -57,6 +56,7 @@ function changeText() {
         timeNum--;
     } else if (timeNum === -1) {
         createModal()
+        labelText.innerText = ' '
         timeNum--;
     }
 }
@@ -64,11 +64,9 @@ function changeText() {
 setInterval(changeText, 1000);
 
 document.addEventListener("keydown", function (e) {
-    console.log('event listener being called')
     if (e.key === "Enter" && isGameOn) {
       e.preventDefault();
       if (input.value.toLowerCase() === person.toLowerCase()) {
-        console.log('second if being called')
         changeName()
         score++
       }

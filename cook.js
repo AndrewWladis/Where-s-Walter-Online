@@ -1,4 +1,4 @@
-if (parseInt(localStorage.getItem('stars')) > 9) {
+if (parseInt(localStorage.getItem('stars')) > 4) {
     window.location.href = './gameover.html';
 }
 
@@ -54,7 +54,6 @@ function changeText() {
         isGameOn = false;
         timeNum--;
     } else if (timeNum === -1) {
-        console.log('if statement being called');
         let money = score * 60;
         localStorage.setItem('money', parseInt(localStorage.getItem('money')) + money);
         document.querySelectorAll('p.modal-header')[0].innerText = `Amount: ${score}`;

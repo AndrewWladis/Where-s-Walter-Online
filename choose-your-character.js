@@ -15,12 +15,12 @@ function numToWord(num) {
 function setOpacity(num) {
     document.getElementById(numToWord(choosenCharacter)).style.opacity = '15%';
     choosenCharacter = num;
-    console.log(num)
     document.getElementById(numToWord(num)).style.opacity = '100%'
 }
 
 function setRole(role) {
     localStorage.setItem('role', role);
+    localStorage.setItem('assets', '');
     if (role === 'DEA') {
         localStorage.setItem('money', 1000); 
         if (localStorage.getItem('stars') != undefined) {

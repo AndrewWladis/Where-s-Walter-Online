@@ -10,6 +10,21 @@
     src: url(assets/font.TTF);
 }
   
+@keyframes blink {
+    0% {
+        border: 5px solid white;
+        padding: 0px;
+    }
+    50% {
+        border: 0px solid white;
+        padding: 5px;
+    }
+    100% {
+        border: 5px solid white;
+        padding: 0px;
+    }
+}
+
 @keyframes show {
     0% {
       opacity: .5;
@@ -32,10 +47,6 @@
     }
 }
 
-.blink {
-    animation: blink 2s infinite;
-}
-
 .building {
     text-align: center;
     font-family: squarefont;
@@ -45,7 +56,7 @@
     justify-content: center;
     font-size: 9vmin;
     margin-bottom: 3.5%;
-    margin-left: 2%;
+    margin-left: 1.5%;
 }
 
 .building-carwash {
@@ -91,6 +102,13 @@
     height: 30vmin;
 }
 
+.building-pawnshop {
+    background-color: rgb(148, 148, 148);
+    border: 5px solid rgb(75, 74, 74);
+    width: 30vmin;
+    height: 37vmin;
+}
+
 .building-saul {
     background-color: rgb(60, 60, 60);
     border: 5px solid rgb(181, 181, 181);
@@ -122,6 +140,10 @@
 .choose-your-character-character-choosen {
     opacity: 100%;
     height: 40vmin;
+}
+
+.choosen-item {
+    animation: blink 1s infinite;
 }
 
 .cookbutton {
@@ -228,7 +250,7 @@
     align-items: center;
     justify-content: center;
     color: rgb(71, 122, 80);
-    font-size: 10vmin;
+    font-size: 9vmin;
     font-family: squarefont;
     background-color: rgb(165, 165, 165);
     text-align: center;
@@ -263,6 +285,21 @@
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+}
+
+.shop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60%;
+    width: 100%;
+}
+
+.shop > img {
+    max-width: 100px;
+    max-height: 100px;
+    padding: 5px;
 }
 
 .square-font {
